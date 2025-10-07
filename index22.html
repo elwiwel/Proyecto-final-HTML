@@ -140,95 +140,131 @@
                 <h2
                     style="grid-column: span 3; justify-self: center; font-family: Oswald; color: white; margin-top: 30px; margin-bottom: 0;">
                     Únete a nuestro club </h2>
-                <p style="color: white; margin-top: 0; font-size: smaller; font-family: 'Courier New', Courier, monospace;">¡No tiene nada de sospechoso!</p>
+                <p
+                    style="color: white; margin-top: 0; font-size: smaller; font-family: 'Courier New', Courier, monospace;">
+                    ¡No tiene nada de sospechoso!</p>
 
                 <div id="form">
-                    <div id="formflex">
-                        <div class="input">
-                            <label for="name">Nombre:</label>
-                            <input type="text" id="name" placeholder="">
-                        </div>
-                        <div class="input">
-                            <label for="email">Correo electrónico:</label>
-                            <input type="email" id="email" placeholder="">
-                        </div>
-                        <div class="input">
-                            <label for="phone">Teléfono:</label>
-                            <input type="tel" id="phone" placeholder="">
-                        </div>
-                        <div class="input">
-                            <label for="aparato">Aparato de Doraemon favorito:</label><br>
-                            <select name="Aparato favorito" id="aparato">
-                                <option value="Linterna">Linterna aumentadora</option>
-                                <option value="gorrocoptero">Gorrocóptero</option>
-                                <option value="Puerta mágica">Puerta mágica</option>
-                                <option value="Pañuelo del tiempo">Pañuelo del tiempo</option>
-                                <option value="Cañón de aire">Cañón de aire</option>
-                                <option value="Gelatina traductora">Gelatina traductora</option>
-                                <option value="Menú durum mixto">Menú durum mixto</option>
-                            </select>
-                        </div>
-                        <div class="input">
-                            <label for="invent">¿Qué aparato futurista inventarías para la serie?</label>
-                            <input type="text" id="invent" placeholder="">
-                        </div>
-                        <div class="input">
-                            <label for="pelicula">Película favorita:</label><br>
-                            <select name="pelicula" id="pelicula">
-                                <option value="Linterna">Linterna aumentadora</option>
-                                <option value="gorrocoptero">Gorrocóptero</option>
-                                <option value="Puerta mágica">Puerta mágica</option>
-                                <option value="Pañuelo del tiempo">Pañuelo del tiempo</option>
-                                <option value="Cañón de aire">Cañón de aire</option>
-                                <option value="Gelatina traductora">Gelatina traductora</option>
-                                <option value="Menú durum mixto">Menú durum mixto</option>
-                            </select>
-                        </div>
+                    <form name="formulario" action="" onsubmit="" method="post">
 
-                        <div id="formgrid">
-                            <div class="form-doras">
-                                <label for="Dora-normal"><img class="form-img" src="assets/images/Doraemon_character.png" alt="Doraemon normal"><br><p>Doraemon esclavo de Nobita</p></label>
-                                <input type="radio" id="Dora-normal" name="Doraemon">
+                        <div id="formflex">
+                            <div class="input">
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" placeholder="">
                             </div>
-                            <div class="form-doras">
-                                <label for="Dora-kid"><img class="form-img" src="assets/images/Dora_the_Kid.webp" alt="Dora-kid"><br><p>Doraemon estadounidense</p></label>
-                                <input type="radio" id="Dora-kid" name="Doraemon">
+                            <div class="input">
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" id="email" placeholder="">
                             </div>
-                            <div class="form-doras">
-                                <label for="Dora-wang"><img class="form-img" src="assets/images/Wang_Dora_ID.webp" alt="Dora-wang"><br><p>Doraemon chino</p></label>
-                                <input type="radio" id="Dora-wang" name="Doraemon">
+                            <div class="input">
+                                <label for="phone">Teléfono:</label>
+                                <input type="tel" id="phone" placeholder="">
                             </div>
-                            <div class="form-doras">
-                                <label for="Dora-nichov"><img class="form-img" src="assets/images/Dora_Nichov.webp" alt="Dora-nichov"><br><p></p>Doraemon ruso</label>
-                                <input type="radio" id="Dora-nichov" name="Doraemon">
+                            <div class="input">
+                                <label for="aparato">Aparato de Doraemon favorito:</label><br>
+                                <select name="Aparato favorito" id="aparato">
+                                    <option value="Linterna">Linterna aumentadora</option>
+                                    <option value="gorrocoptero">Gorrocóptero</option>
+                                    <option value="Puerta mágica">Puerta mágica</option>
+                                    <option value="Pañuelo del tiempo">Pañuelo del tiempo</option>
+                                    <option value="Cañón de aire">Cañón de aire</option>
+                                    <option value="Gelatina traductora">Gelatina traductora</option>
+                                    <option value="Menú durum mixto">Menú durum mixto</option>
+                                </select>
                             </div>
-                            <div class="form-doras">
-                                <label for="Dora-med"><img class="form-img" src="assets/images/Dora_Med_III.webp" alt="Dora-med"><br>Doraemon indio</label>
-                                <input type="radio" id="Dora-med" name="Doraemon">
+                            <div class="input">
+                                <label for="invent">¿Qué aparato futurista inventarías para la serie?</label>
+                                <input type="text" id="invent" placeholder="">
                             </div>
-                            <div class="form-doras">
-                                <label for="Matadora"><img class="form-img" src="assets/images/El_Matadora.webp" alt="Matadora"><br>Doraemon torero</label>
-                                <input type="radio" id="Matadora" name="Doraemon">
+                            <div class="input">
+                                <label for="pelicula">Película favorita:</label><br>
+                                <select name="pelicula" id="pelicula">
+                                    <option value="Linterna">Linterna aumentadora</option>
+                                    <option value="gorrocoptero">Gorrocóptero</option>
+                                    <option value="Puerta mágica">Puerta mágica</option>
+                                    <option value="Pañuelo del tiempo">Pañuelo del tiempo</option>
+                                    <option value="Cañón de aire">Cañón de aire</option>
+                                    <option value="Gelatina traductora">Gelatina traductora</option>
+                                    <option value="Menú durum mixto">Menú durum mixto</option>
+                                </select>
                             </div>
-                            <div class="form-doras">
-                                <label for="Dora-rinho"><img class="form-img" src="assets/images/Dora_Rinho_1979.webp" alt="Dora-rinho"><br>Doraemon futbolista</label>
-                                <input type="radio" id="Dora-rinho" name="Doraemon">
-                            </div>
-                        </div>
 
-                    </div>
+                            <p id="titulodoras">Doraemon favorito:</p>
+                            <div id="formgrid">
+                                <div class="form-doras" id="Dora1">
+                                    <img src="assets/images/green-tick.webp" alt="tick" class="tick">
+                                    <label for="Doraemon"><img class="form-img" src="assets/images/doraemon.webp"
+                                            alt="Doraemon normal">
+                                        <p>Doraemon esclavo de Nobita</p>
+                                    </label>
+                                    <input type="radio" id="Doraemon" name="Doraemon" value="Doraemon">
+                                </div>
+                                <div class="form-doras" id="Dora2">
+                                    <img src="assets/images/green-tick.webp" alt="tick" class="tick">
+                                    <label for="Dora-kid"><img class="form-img" src="assets/images/Dora_the_Kid.webp"
+                                            alt="Dora-kid">
+                                        <p>Doraemon estadounidense</p>
+                                    </label>
+                                    <input type="radio" id="Dora-kid" name="Doraemon" value="Dora-kid">
+                                </div>
+                                <div class="form-doras" id="Dora3">
+                                    <img src="assets/images/green-tick.webp" alt="tick" class="tick">
+                                    <label for="Dora-wang"><img class="form-img" src="assets/images/Wang_Dora_ID.webp"
+                                            alt="Dora-wang">
+                                        <p>Doraemon chino</p>
+                                    </label>
+                                    <input type="radio" id="Dora-wang" name="Doraemon" value="Dora-wang">
+                                </div>
+                                <div class="form-doras" id="Dora3">
+                                    <img src="assets/images/green-tick.webp" alt="tick" class="tick">
+                                    <label for="Dora-nichov"><img class="form-img" src="assets/images/Dora_Nichov.webp"
+                                            alt="Dora-nichov">
+                                        <p>Doraemon ruso</p>
+                                    </label>
+                                    <input type="radio" id="Dora-nichov" name="Doraemon" value="Dora-nichov">
+                                </div>
+                                <div class="form-doras" id="Dora4">
+                                    <img src="assets/images/green-tick.webp" alt="tick" class="tick">
+                                    <label for="Dora-med"><img class="form-img" src="assets/images/Dora_Med_III.webp"
+                                            alt="Dora-med">
+                                        <p>Doraemon indio</p>
+                                    </label>
+                                    <input type="radio" id="Dora-med" name="Doraemon" value="Dora-med">
+                                </div>
+                                <div class="form-doras" id="Dora5">
+                                    <img src="assets/images/green-tick.webp" alt="tick" class="tick">
+                                    <label for="Matadora"><img class="form-img" src="assets/images/El_Matadora.webp"
+                                            alt="Matadora">
+                                        <p>Doraemon torero</p>
+                                    </label>
+                                    <input type="radio" id="Matadora" name="Doraemon" value="Matadora">
+                                </div>
+                                <div class="form-doras" id="Dora6">
+                                    <img src="assets/images/green-tick.webp" alt="tick" class="tick">
+                                    <label for="Dora-rinho"><img class="form-img"
+                                            src="assets/images/Dora_Rinho_1979.webp" alt="Dora-rinho">
+                                        <p>Doraemon futbolista</p>
+                                    </label>
+                                    <input type="radio" id="Dora-rinho" name="Doraemon" value="Dora-rinho">
+                                </div>
+                            </div>
+                            <input type="submit" value="Estoy Doramion" id="submit">
+                        </div>
+                    </form>
                 </div>
             </div>
+
         </main>
 
         <footer>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo minus consectetur ut adipisci? Quia,
-                esse reprehenderit? Aperiam amet obcaecati accusantium quibusdam, at, provident explicabo ad quas,
-                consectetur rem ut!</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo minus consectetur ut adipisci? Quia,
+            esse reprehenderit? Aperiam amet obcaecati accusantium quibusdam, at, provident explicabo ad quas,
+            consectetur rem ut!
         </footer>
 
     </div>
 
+    <script src="doraemon1.js"></script>
 
 </body>
 

@@ -232,27 +232,78 @@ main{
     grid-template-rows: auto;
     align-items: center;
     padding: 20px;
-    gap: 5px;
+    gap: 10px;
 }
 
 .form-doras{
     justify-items: center;
-    align-items: center;
     background-color: rgb(170, 180, 186);
     border: #ff6161 solid 2px;
     border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+
+.form-doras:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.tick{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    height: 50px;
+}
+
+
+input[type=radio]{
+    display: none;
+}
+
+#titulodoras{
+    font: 200;
+    font-family: Oswald;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 10;
 }
 
 .form-doras label{
-    padding-bottom: 10px; 
+    object-fit: cover;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+
+.form-doras p{
+    margin: 0;
+    padding: 5px;
+    text-align: center;
 }
 
 .form-img{
-    height: 150px;
+    object-fit: cover;
+    height: 180px;
+    width: 200px;
     display: block;
     justify-self: center;
-    padding: 5px;
+    padding: 10px;
     margin: 0;
+}
+
+#submit{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    background-color: rgb(234, 31, 31);
+    color: aliceblue;
+    font-size: 120%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 footer{
