@@ -1,14 +1,5 @@
 const formDoras = document.querySelectorAll(".form-doras");
 
-/*formDoras.forEach(form => {
-      form.addEventListener('click', () => {
-        // Quita la clase "seleccionado" de todos los botones
-        formDoras.forEach(b => b.classList.remove('seleccionado'));
-        // Añade la clase al botón clicado
-        form.classList.add('seleccionado');
-      });
-});*/
-
 formDoras.forEach(form => {
       form.addEventListener('click', () => {
         // Quita el tick de todos los botones
@@ -18,11 +9,14 @@ formDoras.forEach(form => {
       });
 });
 
+
+
+
 let nombre;
 let aparato;
 const boton = document.getElementById('botonform');
 
-boton.addEventListener('click', function() {
+boton.addEventListener("click", function() {
     nombre = document.getElementById("name").value;
     alert("¡Gracias por unirte a nuestro club, " + nombre + "!");
     aparato = document.getElementById("aparato").value;
@@ -31,3 +25,7 @@ boton.addEventListener('click', function() {
         window.location.href = "secondary.html";
     }
 })
+
+
+
+
