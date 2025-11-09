@@ -16,7 +16,8 @@ let nombre;
 let aparato;
 const boton = document.getElementById('botonform');
 
-boton.addEventListener("click", function() {
+boton.addEventListener("click", function(ev) {
+  ev.preventDefault();
     nombre = document.getElementById("name").value;
     alert("¡Gracias por unirte a nuestro club, " + nombre + "!");
     aparato = document.getElementById("aparato").value;
